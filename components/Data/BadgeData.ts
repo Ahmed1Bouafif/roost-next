@@ -1,0 +1,1 @@
+export let Tagsinfo = ["Panini", "Pizza", "Sandwitch", "cacke"]

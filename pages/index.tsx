@@ -1,15 +1,26 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Badge from '../components/Badge'
+import Hero from '../components/Hero'
+import Navbar from '../components/Navbar'
+import Food from '../components/Food'
+import Shop from '../components/Shop'
+import { Box } from '@chakra-ui/react'
+import Footer from '../components/Footer';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
+  <>
+    <Navbar />
+    <Box pl="28" pr="28">
+      
+      <Hero />
+      <Badge />
+      <Food />
+      <Shop />
+      
+    </Box>
+    <Footer />
+  </>
+    
 )
 
 export default IndexPage
